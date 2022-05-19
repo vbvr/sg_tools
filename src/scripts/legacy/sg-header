@@ -1,0 +1,5 @@
+#!/bin/bash
+# Python 2.4 first version with -m flag
+[ $# -eq 0 ] && printf "%s\n" "Filename required" && exit 1
+[ ! -r "$1" ] && printf "%s %s\n" "$1" "not found" && exit 1
+python -c "from sg_tools import header; hdr = header.load(\"$1\"); hdr.metadata()"

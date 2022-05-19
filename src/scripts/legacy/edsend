@@ -1,0 +1,18 @@
+#!/bin/bash
+# Python 2.4 first version with -m flag
+# Python 2.6 first to be able to scan ports
+[ $# -eq 0 ] && printf "%s\n" "Filename required" && exit 1
+[ ! -r "$1" ] && printf "%s %s\n" "$1" "not found" && exit 1
+file="$1"
+port="$2"
+mode="$3"
+baud="$4"
+timeout="$5"
+: ${port:="None"}
+: ${mode:="md"}
+: ${baud:="9600"}
+: ${timeout:="1"}
+version=$(python -V 2>&1)
+[ "$port" == "None" ] && [ "${version:7:1}" -eq 2 ] && [ "${version:9:1}" -lt 5 ] && printf "%s\n" "Path to Everdrive required" && exit 1
+#python -c "from sg_tools.edsend import Loader;everdrive = Loader(\"$file\", \"$port\", mode=\"$mode\", cxn=[$baud, $timeout]);everdrive.init();everdrive.start()"
+python -c "from sg_tools.edsend import Loader;everdrive = Loader(\"$file\", \"$port\", cxn=($baud, $timeout, ), mode=\"$mode\", );everdrive.init();everdrive.start()"
