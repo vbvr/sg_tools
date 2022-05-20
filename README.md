@@ -128,7 +128,7 @@ See [LICENSE](LICENSE) for details.
 
 ## Resources
 
-[beardedfoo](https://github.com/beardedfoo/devkit-mega-everdrive-x7)
+[beardedfoo](https://github.com/beardedfoo/devkit-mega-everdrive-x7)  
 [Krikzz](https://krikzz.com)  
-[Plutiedev](https://plutiedev.com)
+[Plutiedev](https://plutiedev.com)  
 [SMS Power!](https://smspower.org)  
