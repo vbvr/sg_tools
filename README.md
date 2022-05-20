@@ -13,13 +13,13 @@ information and to send image files to a Mega Everdrive X7.
   * Genesis/Mega Drive
   * Sega CD (BIOS)
   * Mark III/Master System  
-    ![example sending to ED]('shots/edsend1.png' "Sending MegaDrive Midi Interface from Mac OS X Tiger")
+    ![example sending to ED](shots/edsend1.png "Sending MegaDrive Midi Interface from Mac OS X Tiger")
 * Display the header information of a Sega image.
   * Genesis/Mega Drive
   * 32X
   * Mark III/Master System
   * Game Gear  
-    ![example displaying a Game Gear header]('shots/header2.png' "Metadata of GG Demo by Charles MacDonald")
+    ![example displaying a Game Gear header](shots/header1.png "Metadata of GG Demo by Charles MacDonald")
 
 Tested on Python versions 2.3.5, 2.7. 3.7, and 3.9 on gentoo Linux and Mac OS X 10.4.
 
@@ -110,7 +110,7 @@ hdr.metadata("domestic")
 ```
 
 The output would look something like this is:
- ![image]('shots/header2.png' "Display of TiTAN Overdrive domestic title - Mac OS X 10.4")  
+ ![image](shots/header2.png "Display of TiTAN Overdrive domestic title - Mac OS X 10.4")  
  _(Display of Japanese characters supported with Python 2.5 and a compatible pseudo terminal)_
 
 ## Changelog
@@ -124,7 +124,7 @@ Check out my [profile](https://github.com/vbvr)!
 ## License
 
 vbvr, Copyright 2022
-See [LICENSE] for details.
+See [LICENSE](LICENSE) for details.
 
 ## Resources
 
