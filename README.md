@@ -13,7 +13,7 @@ information and to send image files to a Mega Everdrive X7.
   * Genesis/Mega Drive
   * Sega CD (BIOS)
   * Mark III/Master System  
-    ![example sending to ED](shots/edsend1.png "Sending MegaDrive Midi Interface from Mac OS X Tiger")
+    ![example sending to ED](shots/edsend1.gif "Sending MegaDrive Midi Interface from Mac OS X Tiger")
 * Display the header information of a Sega image.
   * Genesis/Mega Drive
   * 32X
@@ -35,54 +35,8 @@ Tested on Python versions 2.3.5, 2.7. 3.7, and 3.9 on gentoo Linux and Mac OS X 
 
 ## Install
 
-### Prerequisites
-
- Python 2.3.5 or newer  
- [pySerial 2.7 or newer](https://github.com/pyserial/pyserial) for communicating with the Mega
-  Everdrive. This package is hosted on pyPI.  
- _On some systems, the [FTDI driver](https://www.ftdichip.com/old2020/Drivers/VCP.htm) may need to
- be installed, as well._
-
-#### _With `pip` (recommended)_
-
- Create your virtual environment:
-
-  ```bash
-  mkdir sg_tools
-  python -m virtualenv sg_tools
-  . sg_tools/bin/activate
-  ```
-  
- Install the package or wheel:
-
- `pip install /path/to/sg_tools-X.XX.tar.gz`  
- `pip install /path/to/sg_tools-X.XX-py2.py3-none-any.whl`
-
- _Alternatively, install in your user environment with `--user`_
-
-#### Without `pip` (Python 2.5 or below)
-
- Installing PySerial:
-
- ```bash
- wget --no-check-certificate --content-disposition https://files.pythonhosted.org/packages/df/c9/d9da7fafaf2a2b323d20eee050503ab08237c16b0119c7bbf1597d53f793/ pyserial-2.7.tar.gz
- tar -xzf pyserial-2.7.tar.gz && cd pyserial-2.7 && python2 setup.py install
- ```
-
- __Note:__ _Use of `sudo` might be required on your system_  
- __Note:__ _pySerial needs patching for Python 2.5 and below_
-
- ```bash
- sudo sed -Ei 's/0o/0/' $(python -c "import serial as _; print(_.__path__)[0]")/serialposix.py
- ```
-
- Installing SG-Tools:
-
- ```bash
- tar -xzf sg_tools-X.XX-nopip.tar.gz && cd sg_tools-X.XX-nopip && python2 setup.py install
- ```
-
- __Note:__ _Use of `sudo` might be required on your system_
+ [Using `pip`](docs/INSTALL.md) (recommended method for modern versions of Python)  
+ [Using `setup.py`](docs/INSTALL2.md) (recommended for older setups without pip)
 
 ## Examples
 
