@@ -2,8 +2,8 @@
 
 ### Prerequisites
 
- Python 2.3.5 or newer (For Python 2.6 and newer, the [recommended instructions using pip]
- (INSTALL.md) might work better.)  
+ Python 2.3.5 or newer (For Python 2.6 and newer, the
+ [recommended instructions using pip](INSTALL.md) might work better.)  
  [pySerial 2.7](https://github.com/pyserial/pyserial) for communicating with the Mega
   Everdrive. 
  _On some systems, the [FTDI driver](https://www.ftdichip.com/old2020/Drivers/VCP.htm) may need to
