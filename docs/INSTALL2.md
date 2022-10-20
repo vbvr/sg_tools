@@ -32,7 +32,7 @@
  tar -xzf sg_tools-X.XX-nopip.tar.gz && cd sg_tools-X.XX-nopip && python2 setup.py install
  ```
 
-#### Notes
+### Notes
 
  Use of `sudo` might be required on your system for any of these commands.  
 
