@@ -25,7 +25,7 @@
 
  _Alternatively, install this directly into your user environment with `--user`_
 
-### __Notes for deprecated versions of Python__ 
+### __Notes for obsolete versions of Python__ 
 
   pySerial needs patching for Python 2.5 and below:
 
